@@ -1,0 +1,12 @@
+!xterm*font: 10x20
+xterm*foreground: black
+xterm*background: ivory
+xterm*selectToClipboard: true
+xterm*disallowedWindowOps: 20,21,SetXProp
+XTerm*vt100.translations: #override \
+    Shift Ctrl <Key> C: copy-selection(CLIPBOARD) \n\
+    Shift Ctrl <Key> V: insert-selection(CLIPBOARD)
+XTerm*pointerShape: left_ptr
+XTerm*faceName: Monospace
+XTerm*faceSize: 8
+Xcursor.size: 32
