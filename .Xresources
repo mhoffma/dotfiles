@@ -10,3 +10,61 @@ XTerm*pointerShape: left_ptr
 XTerm*faceName: Monospace
 XTerm*faceSize: 8
 Xcursor.size: 32
+
+xterm*termName: xterm-256color
+xterm*faceName: Hack
+xterm*faceSize: 9
+xterm*internalBorder: 3
+xterm*scrollBar: true
+xterm*scrollKey: true
+xterm*multiClickTime: 250
+*VT100.Translations: #override \
+    <Key>BackSpace: string(0x7F)\n\
+    <Key>Delete:    string("\033[3~")\n\
+    <Key>Home:      string("\033[1~")\n\
+    <Key>End:       string("\033[4~")
+*ttyModes: erase ^?
+xterm*locale: true
+xterm*saveLines: 4096
+
+
+#define _foreground #F8F8F2
+#define _background #282A36
+#define _color0     #000000
+#define _color8     #4D4D4D
+#define _color1     #FF5555
+#define _color9     #FF6E67
+#define _color2     #50FA7B
+#define _color10    #5AF78E
+#define _color3     #F1FA8C
+#define _color11    #F4F99D
+#define _color4     #BD93F9
+#define _color12    #CAA9FA
+#define _color5     #FF79C6
+#define _color13    #FF92D0
+#define _color6     #8BE9FD
+#define _color14    #9AEDFE
+#define _color7     #BFBFBF
+#define _color15    #E6E6E6
+
+!xterm*background: rgb:38/38/38
+!xterm*foreground: rgb:f7/f7/f7
+
+xterm*background: _background
+xterm*foreground: _foreground
+xterm*color0: _color0
+xterm*color1: _color1
+xterm*color2: _color2
+xterm*color3: _color3
+xterm*color4: _color4
+xterm*color5: _color5
+xterm*color6: _color6
+xterm*color7: _color7
+xterm*color8: _color8
+xterm*color9: _color9
+xterm*color10: _color10
+xterm*color11: _color11
+xterm*color12: _color12
+xterm*color13: _color13
+xterm*color14: _color14
+xterm*color15: _color15
