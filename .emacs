@@ -35,16 +35,16 @@
 
 
 ;; sample `helm' configuration use https://github.com/emacs-helm/helm/ for details
-(helm-mode)
-(require 'helm-xref)
-(define-key global-map [remap find-file] #'helm-find-files)
-(define-key global-map [remap execute-extended-command] #'helm-M-x)
-(define-key global-map [remap switch-to-buffer] #'helm-mini)
+;(helm-mode)
+;(require 'helm-xref)
+;(define-key global-map [remap find-file] #'helm-find-files)
+;(define-key global-map [remap execute-extended-command] #'helm-M-x)
+;(define-key global-map [remap switch-to-buffer] #'helm-mini)
 
 (which-key-mode)
 (add-hook 'c-mode-hook 'lsp)
 (add-hook 'c++-mode-hook 'lsp)
-
+(add-hook 'python-mode-hook 'lsp)
 (setq gc-cons-threshold (* 100 1024 1024)
       read-process-output-max (* 1024 1024)
       treemacs-space-between-root-nodes nil
@@ -56,3 +56,4 @@
   (add-hook 'lsp-mode-hook #'lsp-enable-which-key-integration)
   (require 'dap-cpptools)
   (yas-global-mode))
+
