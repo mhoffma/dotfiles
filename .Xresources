@@ -1,11 +1,9 @@
 xterm*termName: xterm-256color
-xterm*faceName: Hack
-xterm*faceSize: 9
-xterm*internalBorder: 3
-xterm*scrollBar: true
-xterm*scrollKey: true
-xterm*multiClickTime: 250
-*VT100.Translations: #override \
+xterm*selectToClipboard: true
+xterm*disallowedWindowOps: 20,21,SetXProp
+XTerm*vt100.translations: #override \
+    Shift Ctrl <Key> C: copy-selection(CLIPBOARD) \n\
+    Shift Ctrl <Key> V: insert-selection(CLIPBOARD)\n\
     <Key>BackSpace: string(0x7F)\n\
     <Key>Delete:    string("\033[3~")\n\
     <Key>Home:      string("\033[1~")\n\
@@ -13,6 +11,14 @@ xterm*multiClickTime: 250
 *ttyModes: erase ^? 
 xterm*locale: true
 xterm*saveLines: 4096
+XTerm*pointerShape: left_ptr
+XTerm*faceName: Hack
+XTerm*faceSize: 16
+Xcursor.size: 32
+!xterm*scrollBar: true
+!xterm*scrollKey: true
+!xterm*multiClickTime: 250
+
 
 
 #define _foreground #F8F8F2
