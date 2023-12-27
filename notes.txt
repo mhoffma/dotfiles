@@ -1,0 +1,13 @@
+#oh-mh-zsh:
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+#py
+"${SHELL}" <(curl -L micro.mamba.pm/install.sh)
+micromamba env create -f py.yml
+micromamba activate py
+micromamba install -c conda-forge xeus-cling
+#rust
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+rustup component add rust-src
+rustup component add rust-analyzer
+cargo install evcxr_jupyter
+
