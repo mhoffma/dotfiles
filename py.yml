@@ -7,9 +7,9 @@ dependencies:
   - python
   - ipython
   - jupyterlab
+    #- xeus-cling
   - pytorch
   - pybind11
-  - xeus-cling
   - numpy
   - matplotlib
   - pandas
