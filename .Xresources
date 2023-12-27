@@ -13,7 +13,7 @@ xterm*locale: true
 xterm*saveLines: 4096
 XTerm*pointerShape: left_ptr
 XTerm*faceName: Hack
-XTerm*faceSize: 16
+XTerm*faceSize: 12
 Xcursor.size: 32
 !xterm*scrollBar: true
 !xterm*scrollKey: true

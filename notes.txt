@@ -15,3 +15,5 @@ git clone git@github.com:nnicandro/emacs-zmq.git
 cd emacs-zmq ; make
 find ~/.emacs.d/elpa/ -name emacs-zmq.so
 cp emacs-zmq.so ~/.emacs.d/?????
+
+chrome://flags/#crostini-gpu-support
