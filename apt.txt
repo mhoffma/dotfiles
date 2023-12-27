@@ -1,0 +1,22 @@
+Commandline: apt-get -y dist-upgrade
+Commandline: apt-get -y install -o Acquire::Retries=3 apt-utils cpio ifupdown init iproute2 iputils-ping isc-dhcp-client less locales netbase net-tools openssh-client procps sudo vim whiptail
+Commandline: apt-get -y install --no-install-recommends -o Acquire::Retries=3 python3
+Commandline: apt-get -o Acquire::Retries=3 -q -y --allow-unauthenticated install cros-apt-config
+Commandline: apt-get -o Acquire::Retries=3 -q -y --allow-unauthenticated install cros-guest-tools
+Commandline: packagekit role='update-packages'
+Commandline: apt-get install htop
+Commandline: apt install zsh
+Commandline: apt install emacs
+Commandline: apt install tmux
+Commandline: apt install build-essential
+Commandline: apt install fzf
+Commandline: packagekit role='update-packages'
+Commandline: apt install cmake
+Commandline: apt install autoconf
+Commandline: apt-get install autogen libtool shtool
+Commandline: apt install autoconf automake libtool texinfo build-essential xorg-dev libgtk2.0-dev libjpeg-dev libncurses5-dev libdbus-1-dev libgif-dev libtiff-dev libm17n-dev libpng-dev librsvg2-dev libotf-dev libgnutls28-dev libxml2-dev
+Commandline: apt install x11-apps
+Commandline: apt install bear
+Commandline: apt install xterm
+Commandline: apt install clangd
+Commandline: apt install intel-basekit

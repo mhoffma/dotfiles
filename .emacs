@@ -60,7 +60,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
-   '(toml-mode rustic yaml-mode jupyter org-bullets org-tempo ivy elixr elixer magit counsel-projectile company-box lsp-ivy lsp-ui dap-mode dap-cpptools rust-mode cask realgud-lldb lsp-python-ms lsp-mode)))
+   '(conda toml-mode rustic yaml-mode jupyter org-bullets org-tempo ivy elixr elixer magit counsel-projectile company-box lsp-ivy lsp-ui dap-mode dap-cpptools rust-mode cask realgud-lldb lsp-python-ms lsp-mode)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -186,10 +186,11 @@
   (add-to-list 'org-structure-template-alist '("sh" . "src shell"))
   (add-to-list 'org-structure-template-alist '("el" . "src emacs-lisp"))
   (add-to-list 'org-structure-template-alist '("mk" . "src makefile"))
-  (add-to-list 'org-structure-template-alist '("py" . "src python"))
   (add-to-list 'org-structure-template-alist '("cc" . "src C++"))
+  (add-to-list 'org-structure-template-alist '("py" . "src python"))
   (add-to-list 'org-structure-template-alist '("jpy" . "src jupyter-python :async yes :session py"))
   (add-to-list 'org-structure-template-alist '("cpp" . "src jupyter-C++17 :async yes :session c++17"))
+  (add-to-list 'org-structure-template-alist '("C" . "src jupyter-C++17 :async yes :session c++17"))
   )
 
 (use-package jupyter)
@@ -239,3 +240,12 @@
   (add-hook 'before-save-hook 'lsp-format-buffer nil t))
 
 (use-package toml-mode :ensure)
+
+(use-package conda
+  :custom
+  (conda-anaconda-home "/opt/anaconda3/")
+  :config
+  (conda-env-activate "py")
+  (conda-env-initialize-interactive-shells)
+  (conda-env-initialize-eshell)
+  (conda-env-autoactivate-mode t)  )

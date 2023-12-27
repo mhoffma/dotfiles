@@ -1,0 +1,23 @@
+name: py
+
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python
+  - ipython
+  - jupyterlab
+  - pytorch
+  - pybind11
+  - xeus-cling
+  - numpy
+  - matplotlib
+  - pandas
+  - tqdm
+  - pip
+  - cmake
+  - ninja
+  - mkl
+  - mkl-include
+  - lapack
+  - m4
