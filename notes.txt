@@ -11,3 +11,7 @@ rustup component add rust-src
 rustup component add rust-analyzer
 cargo install evcxr_jupyter
 
+git clone git@github.com:nnicandro/emacs-zmq.git
+cd emacs-zmq ; make
+find ~/.emacs.d/elpa/ -name emacs-zmq.so
+cp emacs-zmq.so ~/.emacs.d/?????
